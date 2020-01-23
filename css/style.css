@@ -143,9 +143,17 @@ body {
 
 
 /* PROMO BAR */
+#promo-bar {
+}
+
 .container-fullwidth.promo-bar {
     background-color: #425b76;
+    background-image: url('https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/_style-guide/sword-sprocket/circleLight1.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
 }
+
 #promo-bar p {
     float: left;
     width: 85%;
