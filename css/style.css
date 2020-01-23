@@ -28,6 +28,7 @@ body {
 .container-fullwidth.top-bar {
     height: 73px; /* da rimuovere ? */
     background-color: #f5f8fa;
+    border-bottom: 1px solid #cbd6e2;
 }
 
 #top-bar {
@@ -69,6 +70,28 @@ body {
     line-height: 73px;
 }
 
+.dx-group a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .fa-search {
+    margin-right: 15px;
     color: #00a4bd;
+}
+
+#login-button {
+    margin: 0 10px;
+    padding: 8px 12px;
+    color: #ff7a59;
+    background-color: #fff;
+    border: 1px solid #ff7a59;
+    border-radius: 3px;
+}
+
+.orange-button {
+    padding: 8px 12px;
+    border-radius: 3px;
+    background-color: #ff7a59;
+    color: #fff;
 }
