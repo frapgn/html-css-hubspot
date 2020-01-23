@@ -95,3 +95,27 @@ body {
     background-color: #ff7a59;
     color: #fff;
 }
+/* FINE TOP BAR */
+
+
+/* MAIN BAR */
+.container-fullwidth.main-bar {
+    height: 82px;
+}
+
+#main-bar {
+
+}
+
+#logo {
+    padding: 24.5px 0;
+    float: left;
+}
+
+#navbar, ul {
+    float: right;
+}
+
+li {
+    /* display: inline-block; */
+}
