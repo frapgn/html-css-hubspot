@@ -16,6 +16,12 @@ body {
     color: #33475b;
 }
 
+h2 {
+    font-size: 32px;
+    font-weight: 900;
+    margin: 10px 0 20px;
+}
+
 h4 {
     font-size: 21px;
     padding: 20px 0;
@@ -63,7 +69,6 @@ p {
     border-radius: 3px;
     color: #fff;
     background-color: #ff7a59;
-    letter-spacing: 0;
     border-style: none;
 }
 
@@ -265,6 +270,10 @@ p {
     height: 195px;
 }
 
+.above-cards p {
+    margin-bottom: 10px;
+}
+
 .cards {
     margin: 0 auto;
     max-width: 960px;
@@ -281,6 +290,14 @@ p {
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 0 11px #eaf0f6;
+    transition: 0.3s;
+}
+
+.fullwidth-card:hover {
+    box-shadow:0 10px 50px -5px rgba(51,71,91,0.12);
+/* -webkit-transform:scale(1.014); */
+    transform:scale(1.014);
+    transition: 0.3s ease-in-out;
 }
 
 .fullwidth-card div:first-of-type {
@@ -313,4 +330,18 @@ p {
     border-bottom: 1px solid #e0e6ed;
     width: 100%;
     margin-left: 10px;
+}
+
+.card-container {
+    width: 33.3333%;
+    padding: 0 30px;
+}
+
+.card {
+    float: left;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 11px #eaf0f6;
+    transition: 0.3s;
 }
