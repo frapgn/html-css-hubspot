@@ -13,6 +13,31 @@
 body {
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.5px;
+    color: #33475b;
+}
+
+a {
+    color: #33475b;
+}
+
+p {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.p-small {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.p-extrasmall {
+    font-size: 13px;
+}
+
+.p-microscopic {
+    font-size: 11px;
+    line-height: 19px;
+    font-weight: 700;
 }
 
 .container {
@@ -28,15 +53,17 @@ body {
 .btn {
     padding: 12px 25px;
     text-decoration: none;
+    font-size: 14px;
     font-weight: 700;
     border-radius: 3px;
     color: #fff;
     background-color: #ff7a59;
     letter-spacing: 0;
+    border-style: none;
 }
 
 .btn-big {
-    font-size: 18px;
+    font-size: 15px;
     padding: 24px 50px;
 }
 
@@ -60,7 +87,7 @@ body {
     margin: 25px 0;
 }
 .sx-group a {
-    color: #33475b;
+    /* color: #33475b; */
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
@@ -137,7 +164,7 @@ body {
     display: inline-block;
     line-height: 82px;
     font-weight: 900;
-    color: #33475b;
+    /* color: #33475b; */
 
 }
 
@@ -182,7 +209,7 @@ body {
 
 /* JUMBOTRON */
 .jumbotron {
-    height: 614px; /* da rimuovere */
+    height: 600px; /* da rimuovere */
     background-color: #fff2ee;
     background-image: url('https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/home/2019/clouds-desktop.svg');
     background-repeat: no-repeat;
@@ -192,4 +219,53 @@ body {
 
 .cta-jumbotron {
     width: 40%;
+}
+
+.cta-jumbotron h1 {
+    font-size: 58px;
+    font-weight: 900;
+    padding: 80px 0 20px;
+}
+
+.cta-jumbotron button {
+    margin: 20px 0;
+}
+
+.cta-jumbotron p:last-child {
+    width: 200px;
+}
+/* END JUMBOTRON */
+
+
+/* DIVIDING ROW */
+.dividing-row {
+    height: 79px;
+    border-top: 3px solid #33475b;
+    border-bottom: 3px solid #33475b;
+    background-color: #afebe4;
+}
+/* END DIVIDING ROW */
+
+
+/* CARDS */
+.cards-container {
+    background-color: #f5f8fa;
+}
+
+.intro-cards {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 85px 0 40px;
+}
+
+.intro-cards img {
+    height: 195px;
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 960px;
+    background-color: lightgray;
+    height: 1000px;
 }
