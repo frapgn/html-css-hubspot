@@ -42,7 +42,7 @@ body {
 
 /* TOP BAR */
 .container-fullwidth.top-bar {
-    height: 73px; /* da rimuovere ? */
+    /* height: 73px; */
     background-color: #f5f8fa;
     border-bottom: 1px solid #cbd6e2;
 }
@@ -111,12 +111,12 @@ body {
     background-color: #ff7a59;
     color: #fff;
 }
-/* FINE TOP BAR */
+/* END TOP BAR */
 
 
 /* MAIN BAR */
 .container-fullwidth.main-bar {
-    height: 82px;
+    /* height: 82px; */
 }
 
 #main-bar {
@@ -133,13 +133,21 @@ body {
 }
 
 #navbar li {
+    margin: 0 15px;
     display: inline-block;
     line-height: 82px;
     font-weight: 900;
     color: #33475b;
-    margin: 0 15px;
+
 }
-/* FINE MAIN BAR */
+
+#navbar li:not(:nth-child(2)):after {
+    content: '\25BC';
+    font-size: 15px;
+    margin-left: 5px;
+    color: #7c98b6;
+}
+/* END MAIN BAR */
 
 
 /* PROMO BAR */
@@ -168,4 +176,20 @@ body {
     margin: 25.5px 0;
     background-color: #fff;
     color: #33475b;
+}
+/* END PROMO BAR */
+
+
+/* JUMBOTRON */
+.jumbotron {
+    height: 614px; /* da rimuovere */
+    background-color: #fff2ee;
+    background-image: url('https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/home/2019/clouds-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+}
+
+.cta-jumbotron {
+    width: 40%;
 }
