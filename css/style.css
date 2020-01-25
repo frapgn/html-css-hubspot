@@ -36,16 +36,18 @@ p {
     font-size: 16px;
 }
 
-.p-small {
+.small {
     line-height: 23px;
     font-size: 14px;
 }
 
-.p-extrasmall {
+.extrasmall {
     font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
 }
 
-.p-microscopic {
+.microscopic {
     font-size: 11px;
     line-height: 19px;
     font-weight: 700;
@@ -165,7 +167,7 @@ p {
     float: left;
 }
 
-#navbar, ul {
+#navbar, #navbar ul {
     float: right;
 }
 
@@ -257,7 +259,11 @@ p {
 /* END DIVIDING ROW */
 
 
-/* CARDS */
+/* LAS VEGAS */
+#las-vegas {
+    background-color: #f5f8fa;
+}
+
 /* fullwidth card */
 .above-cards {
     text-align: center;
@@ -276,7 +282,10 @@ p {
 
 .cards {
     margin: 0 auto;
-    max-width: 960px;
+    padding-bottom: 127px;
+    max-width: 1024px;
+    /* width: 1024px; */
+
 }
 
 .fullwidth-card-container {
@@ -319,10 +328,10 @@ p {
     position: relative;
     font-size: 13px;
     font-weight: 900;
-    margin: 26px 0 15px;
+    margin: 26px 0 20px;
 }
 
-.popular-features:after {
+.fullwidth-card .popular-features:after {
     content: '';
     position: absolute;
     top: 12px;
@@ -332,16 +341,103 @@ p {
     margin-left: 10px;
 }
 
-.card-container {
+.fullwidth-card ul {
+    padding-left: 18px;
+}
+
+.fullwidth-card li {
+    list-style: none;
+    float: left;
+    position: relative;
+    padding: 0 40px 0 10px;
+}
+
+.fullwidth-card li:before { /* FIXME: lato destro e inferiore dell'icona tagliati dopo la transizione, probabile causa: padding di <li> e limiti del <div> */
+    content: '';
+    background-image: url('https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/partners/images/Orange_Checkmark.svg');
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left: -18px;
+}
+
+.card-container-sx {
+    float: left;
     width: 33.3333%;
-    padding: 0 30px;
+    padding: 0 15px 15px 30px;
+}
+
+.card-container-mid {
+    float: left;
+    width: 33.3333%;
+    padding: 0 15px 15px;
+}
+
+.card-container-dx {
+    float: left;
+    width: 33.3333%;
+    padding: 0 30px 15px 15px;
 }
 
 .card {
-    float: left;
+    text-align: center;
     padding: 30px;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 0 11px #eaf0f6;
     transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow:0 10px 50px -5px rgba(51,71,91,0.12);
+    transform:scale(1.014);
+    transition: 0.3s ease-in-out;
+}
+
+.card img {
+    height: 130px;
+}
+
+.card p {
+
+    text-align: left;
+}
+
+.divider {
+    border-bottom: 1px solid #e0e6ed;
+    margin-top: 26px;
+}
+
+.card ul {
+    margin-bottom: 20px;
+    padding-left: 18px;
+
+}
+
+.card li {
+    text-align: left;
+    list-style: none;
+    /* float: left; */
+    position: relative;
+    padding: 0 0 10px 10px; */
+}
+
+.card li:before { /* FIXME: lato destro e inferiore dell'icona tagliati dopo la transizione, probabile causa: padding di <li> e limiti del <div> */
+    content: '';
+    background-image: url('https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/partners/images/Orange_Checkmark.svg');
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left: -18px;
+}
+/* END LAS VEGAS */
+
+
+/* 8 CELLS */
+#eight-cells {
+    background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+    height: 800px;
 }
