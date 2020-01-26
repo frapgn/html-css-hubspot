@@ -60,7 +60,7 @@ p {
 }
 
 .container-fullwidth {
-    height: 100%;
+    width: 100%;
 }
 
 .btn {
@@ -196,15 +196,25 @@ p {
 
 /* PROMO BAR */
 #promo-bar {
+    background-color: #425b76;
 }
 
-.container-fullwidth.promo-bar {
-    background-color: #425b76;
+.background-image {
+    /* background-color: #425b76; */
     background-image: url('https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/_style-guide/sword-sprocket/circleLight1.svg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
 }
+
+
+/* .container-fullwidth.promo-bar {
+    background-color: #425b76;
+    background-image: url('https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/_style-guide/sword-sprocket/circleLight1.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+} */
 
 #promo-bar p {
     float: left;
@@ -235,7 +245,8 @@ p {
 }
 
 .cta-jumbotron {
-    width: 40%;
+    width: 41%;
+    float: left;
 }
 
 .cta-jumbotron h1 {
@@ -248,7 +259,7 @@ p {
     margin: 20px 0;
 }
 
-.cta-jumbotron p:last-child {
+.jumbotron .cta-jumbotron p:last-child {
     width: 200px;
 }
 /* END JUMBOTRON */
@@ -461,6 +472,8 @@ p {
 }
 
 .box h2 {
+    font-size: 42px;
+    letter-spacing: 2px;
     display: inline-block;
     margin-bottom: 5px;
     position: relative;
@@ -496,14 +509,70 @@ p {
 
 .customers-numbers {
     width: 33%;
-    padding:
+    padding: 0 40px;
+    float: left;
+}
+
+.customers-numbers h2{
+    margin-bottom: 10px;
+    font-size: 42px;
+    letter-spacing: 2px;
 }
 
 .customers-numbers p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .customers-logos {
-    width: 78%;
+    float: right;
+    width: 56%;
+}
+
+.customers-logos img {
+    width: 110px;
+    vertical-align: middle;
+}
+
+.customers-logos div {
+    float: left;
+    padding: 20px;
+}
+
+.customers-logos div:nth-child(3) {
+    padding-top: 15px;
+}
+
+.customers-logos div:nth-child(4) {
+    padding-top: 12px;
+}
+
+.customers-logos div:nth-child(6) {
+    padding-top: 23px;
+}
+
+.customers-logos div:nth-child(7) {
+    padding-top: 12px;
+}
+
+.final-cta-container {
+    padding-bottom: 130px;
+}
+
+.final-cta-container .cta-jumbotron {
+    padding-top: 50px;
+}
+
+.final-cta-container .cta-jumbotron p:last-child {
+    font-weight: 400;
+    color: #516f90;
+}
+
+.final-cta-img {
+    float: right;
+}
+
+.final-cta-img img {
+    width: 350px;
 }
 /* END FINAL CTA */
