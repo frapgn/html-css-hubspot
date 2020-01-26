@@ -265,18 +265,18 @@ p {
 }
 
 /* fullwidth card */
-.above-cards {
+.intro-section {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 85px 0 40px;
 }
 
-.above-cards img {
+.intro-section img {
     height: 195px;
 }
 
-.above-cards p {
+.intro-section p {
     margin-bottom: 10px;
 }
 
@@ -436,8 +436,57 @@ p {
 /* END LAS VEGAS */
 
 
-/* 8 CELLS */
-#eight-cells {
+/* 8 BOXES */
+#eight-boxes {
     background-image: linear-gradient(45deg, #00a4bd, #00bda5);
-    height: 800px;
+    color: #fff;
 }
+
+#eight-boxes .intro-section {
+    padding: 130px 0 80px;
+    max-width: 750px;
+}
+
+.boxes {
+    padding-bottom: 130px;
+}
+
+.box {
+    float: left;
+    padding: 30px;
+    text-align: center;
+    width: 25%
+}
+
+.box h2 {
+    display: inline-block;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.box:not(:nth-child(4n+4)){
+    border-right: 1px solid #fff;
+}
+
+.boxes-row:first-of-type > div {
+    border-bottom: 1px solid #fff;
+}
+
+/* scusate volevo fare qualche esperimento :) */
+.boxes-row:first-of-type .box:not(:nth-child(4)) h2:after,
+.boxes-row:last-of-type .box:not(:nth-child(2)) h2:after {
+    content: '+';
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+}
+/* END 8 BOXES*/
+
+
+/* FINAL CTA */
+
+/* END FINAL CTA */
