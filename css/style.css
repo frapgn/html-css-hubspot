@@ -86,6 +86,15 @@ p {
     border-bottom: 1px solid #cbd6e2;
 }
 
+.container-fullwidth.top-bar {
+    position: sticky;
+    top: 0;
+    /* left: 0;
+    right: 0;
+    bottom: 0; */
+    z-index: 9999;
+}
+
 #top-bar {
     /* line-height: 73px; */
 }
@@ -155,11 +164,9 @@ p {
 
 /* MAIN BAR */
 .container-fullwidth.main-bar {
-    /* height: 82px; */
 }
 
 #main-bar {
-
 }
 
 #logo {
@@ -176,8 +183,6 @@ p {
     display: inline-block;
     line-height: 82px;
     font-weight: 900;
-    /* color: #33475b; */
-
 }
 
 #navbar li:not(:nth-child(2)):after {
@@ -221,12 +226,12 @@ p {
 
 /* JUMBOTRON */
 .jumbotron {
-    height: 600px; /* da rimuovere */
     background-color: #fff2ee;
     background-image: url('https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/home/2019/clouds-desktop.svg');
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 50%;
+    padding-bottom: 200px;
 }
 
 .cta-jumbotron {
@@ -304,7 +309,6 @@ p {
 
 .fullwidth-card:hover {
     box-shadow:0 10px 50px -5px rgba(51,71,91,0.12);
-/* -webkit-transform:scale(1.014); */
     transform:scale(1.014);
     transition: 0.3s ease-in-out;
 }
@@ -335,7 +339,6 @@ p {
     content: '';
     position: absolute;
     top: 12px;
-    /* height: 5px; */
     border-bottom: 1px solid #e0e6ed;
     width: 100%;
     margin-left: 10px;
@@ -419,7 +422,6 @@ p {
 .card li {
     text-align: left;
     list-style: none;
-    /* float: left; */
     position: relative;
     padding: 0 0 10px 10px; */
 }
@@ -488,5 +490,20 @@ p {
 
 
 /* FINAL CTA */
+.customers-container {
+    padding: 100px 0 120px;
+}
 
+.customers-numbers {
+    width: 33%;
+    padding:
+}
+
+.customers-numbers p {
+    font-size: 16px;
+}
+
+.customers-logos {
+    width: 78%;
+}
 /* END FINAL CTA */
