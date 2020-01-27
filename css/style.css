@@ -660,6 +660,10 @@ footer a:hover {
     border: none;
 }
 
+.footer-button:hover {
+    background-color: #eceff2;
+}
+
 .fab {
     font-size: 20px;
     margin-right: 18px;
@@ -725,5 +729,3 @@ small {
 #chat:hover {
     box-shadow: 0 2px 10px rgba(0,0,0,.2),0 4px 28px rgba(0,0,0,.3);
 }
-
-/* prova */
