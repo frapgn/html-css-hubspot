@@ -118,6 +118,7 @@ button:hover {
 .sx-group {
     margin: 25px 0;
 }
+
 .sx-group a {
     /* color: #33475b; */
     text-decoration: none;
@@ -152,7 +153,7 @@ button:hover {
     line-height: 72px;
 }
 
-.dx-group a{
+.dx-group a {
     text-decoration: none;
     font-size: 12px;
 }
@@ -237,7 +238,6 @@ button:hover {
     background-size: 100% auto;
     background-position: center;
 }
-
 
 /* .container-fullwidth.promo-bar {
     background-color: #425b76;
@@ -702,7 +702,6 @@ small {
     padding: 0 16px;
     font-size: 15px;
 }
-
 
 #fly {
     position: fixed;
