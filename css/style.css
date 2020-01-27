@@ -158,6 +158,18 @@ button:hover {
     font-size: 12px;
 }
 
+.search {
+    display: inline-block;
+}
+
+.hide-search {
+    display: none;
+}
+
+.show-search {
+    display: inline;
+}
+
 .fa-search {
     margin-right: 15px;
     color: #00a4bd;

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Hubspot</title>
         <script src="https://kit.fontawesome.com/eb054ca6c4.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <link rel="shortcut icon" href="https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
@@ -23,7 +24,17 @@
                     </div>
 
                     <div class="dx-group clearfix">
-                        <i class="fas fa-search"></i>
+                        <div class="search">
+                            <i class="fas fa-search"></i>
+                            <input class="input hide-search" type="search" placeholder="search">
+                        </div>
+
+                        <script type="text/javascript">
+                            $(document).on('click', '.search', function(){
+                                $('input').addClass('show-search').removeClass('hide-search')
+                            })
+                        </script>
+
                         <a id="login-button" href="#">Log in</a>
                         <a class="orange-button" href="#">Get HubSpot free</a>
                     </div>
